@@ -1,0 +1,35 @@
+.big-navigation {
+  width: 100%;
+}
+
+.big-navigation__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 25px;
+
+  @include reset-list;
+
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: $letter-spacing;
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr;
+    font-size: 18px;
+  }
+}
+
+.big-navigation__link {
+  color: $white;
+
+  @include transition;
+
+  @media (min-width: $desktop-width) {
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+

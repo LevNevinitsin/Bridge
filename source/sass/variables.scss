@@ -1,0 +1,55 @@
+// Viewports
+
+$tablet-width: 768px;
+$desktop-width: 1150px;
+$widescreen-width: 1440px;
+
+// Colors
+
+$primary: #ff970a;
+$primary-2: #ff9618;
+
+$white: #ffffff;
+$white-opacity-30: rgba($white, 0.3);
+$white-opacity-50: rgba($white, 0.5);
+
+$light: #a1a1a1;
+$light-2: #a3a3a3;
+$light-3: #a9a9a9;
+$light-4: #f9f9f9;
+
+$grey: #c0cCc0;
+$grey-2: #c8c8c8;
+$grey-2-opacity-0: rgba($grey-2, 0.2);
+$grey-3: #696969;
+$grey-4: #7c7571;
+
+$dark: #181818;
+$dark-opacity-50: rgba($dark, 0.5);
+
+$dark-1: #2c2c2c;
+$dark-2: #4c4c4c;
+$dark-3: #161616;
+$dark-4: #525252;
+$dark-5: #101010;
+$dark-6: #1b1b1b;
+$dark-7: #2b2b2b;
+
+$black: #000000;
+$black-opacity-25: rgba($black, 0.25);
+
+$transparent: transparent;
+
+// Miscellaneous
+
+$font-family: "SF UI Display", "Arial", sans-serif;
+
+$letter-spacing: 0.08em;
+$letter-spacing-2: 0.045em;
+$letter-spacing-3: 0.07em;
+
+$default-transition-time: 0.3s;
+
+$background-gradient: linear-gradient(124.94deg, $dark-1 -320.88%, $grey-2-opacity-0 127.52%);
+
+

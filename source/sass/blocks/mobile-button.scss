@@ -1,0 +1,54 @@
+.mobile-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+
+  color: $dark-2;
+
+  border: none;
+  background-color: $transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-width: $desktop-width) {
+    width: 30px;
+    height: 30px;
+
+    background-size: auto 20px;
+
+    cursor: pointer;
+
+    @include transition;
+
+    &:hover {
+      color: $white;
+    }
+  }
+}
+
+.mobile-button__icon {
+  @media (min-width: $desktop-width) {
+    width: 30px;
+    height: 30px;
+
+    background-size: auto 20px;
+
+    &--play {
+      width: 23px;
+      height: 23px;
+    }
+
+    &--corners {
+      width: 21px;
+      height: 21px;
+    }
+
+    &--sound {
+      width: 28px;
+      height: 21px;
+    }
+  }
+}

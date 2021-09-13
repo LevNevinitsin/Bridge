@@ -1,0 +1,36 @@
+.main-navigation {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    width: max-content;
+  }
+}
+
+.main-navigation__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 800px;
+
+  @include reset-list;
+
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.main-navigation__item {
+  &:not(:last-child) {
+    margin-right: 40px;
+  }
+}
+
+.main-navigation__link {
+  color: $white;
+
+  @include transition;
+
+  &:hover {
+    color: $primary;
+  }
+}

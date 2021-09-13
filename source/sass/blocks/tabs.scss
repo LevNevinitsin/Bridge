@@ -1,0 +1,95 @@
+.tabs {
+  border-radius: 20px;
+  background-color: $dark;
+
+  @media (min-width: $widescreen-width) {
+    background-color: $black;
+  }
+}
+
+.tabs__heads {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @media (min-width: $widescreen-width) {
+    column-gap: 39px;
+  }
+}
+
+.tabs__head {
+  display: flex;
+  align-items: center;
+  min-height: 42px;
+  padding: 8px 15px;
+
+  font-family: $font-family;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.05;
+  color: $white-opacity-50;
+
+  border: none;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: $dark-5;
+
+  &--active {
+    color: $white;
+
+    background-color: $dark;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 18px 25px;
+
+    font-size: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 32px 51px 26px;
+
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 1;
+    text-align: left;
+    color: $white;
+
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    background-color: $dark;
+  }
+}
+
+.tabs__bodies {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 39px;
+  }
+}
+
+.tabs__body {
+  display: none;
+  padding: 24px 13px 25px;
+
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: $dark;
+
+  &--active {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    padding: 0 23px 37px;
+
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+
+    &--deal {
+      padding: 0 13px 37px;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.navigation__title {
+  margin: 0 0 18px;
+
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: $letter-spacing;
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 25px;
+
+    font-size: 18px;
+  }
+}
+
+.navigation__list {
+  @include reset-list;
+
+  font-size: 13px;
+  line-height: 1.45;
+
+
+  @media (min-width: $desktop-width) {
+    font-size: 15px;
+  }
+}
+
+.navigation__item {
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+
+.navigation__link {
+  color: $grey;
+
+  @include transition;
+
+  @media (min-width: $desktop-width) {
+    &:hover {
+      color: $white;
+    }
+  }
+}

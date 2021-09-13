@@ -1,0 +1,138 @@
+.options {
+  padding: 31px 17px 62px;
+
+  @media (min-width: $desktop-width) {
+    padding: 45px 30px 80px;
+  }
+
+  @media (min-width: $widescreen-width) {
+    max-width: 1185px;
+    margin: 0 auto;
+    padding: 58px 0 109px;
+  }
+}
+
+.options__heading {
+  margin-bottom: 22px;
+}
+
+.options__select {
+  width: 100%;
+  margin-bottom: 21px;
+  padding: 11px 55px 11px 17px;
+
+  font-family: $font-family;
+  font-size: 13px;
+  line-height: 0.95;
+  color: $primary;
+
+  border: 2px solid $primary;
+  border-radius: 41px;
+  background-color: $black;
+  background-image: url('../img/icon-arrow-checkmark.svg');
+  background-repeat: no-repeat;
+  background-position: center right 20px;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  &:focus {
+    @include focus;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+
+  @media (min-width: $widescreen-width) {
+    display: none;
+  }
+}
+
+.options__inner-tabs {
+  margin-bottom: 19px;
+
+  @media (min-width: $widescreen-width) {
+    margin-bottom: 38px;
+  }
+}
+
+.options__how-it-works {
+  margin: 0 0 5px;
+
+  font-size: 11px;
+  line-height: 0.95;
+  color: $light-3;
+
+  @media (min-width: $tablet-width) {
+    font-size: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 13px;
+
+    font-size: 15px;
+
+    &--deal-conditions {
+      padding: 0 19px;
+    }
+  }
+}
+
+.options__explanation {
+  margin: 0 0 22px;
+
+  font-size: 13px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 365px;
+    margin: 0 0 29px;
+
+    font-size: 17px;
+    line-height: 1.45;
+
+    &--deal-conditions {
+      margin: 0 0 39px;
+      padding: 0 19px;
+    }
+  }
+}
+
+.options__profitability {
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.options__invest {
+  @media (min-width: $desktop-width) {
+    align-self: end;
+
+    &--management {
+      padding: 0 12px;
+    }
+
+    &--deal {
+      padding: 0 24px;
+    }
+  }
+}
+
+.options__invest-button {
+  min-width: 195px;
+  margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}

@@ -1,0 +1,28 @@
+.input {
+  width: 100%;
+  max-width: unset;
+  padding: 13px 28px;
+
+  font-size: 13px;
+  line-height: 1;
+  letter-spacing: $letter-spacing-2;
+  color: $white;
+
+  border: none;
+  border-radius: 40px;
+  background-color: $dark;
+
+  &::placeholder {
+    line-height: 1;
+  }
+
+  &:focus {
+    @include focus;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 17px 26px;
+
+    font-size: 15px;
+  }
+}

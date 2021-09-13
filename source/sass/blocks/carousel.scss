@@ -1,0 +1,91 @@
+.carousel {
+  position: relative;
+
+  width: calc(100vw - 18px);
+
+  overflow: hidden;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+
+    width: 20%;
+  }
+
+  &::before {
+    display: none;
+
+    left: 0;
+
+    background: linear-gradient(90deg, $dark, $transparent);
+  }
+
+  &::after {
+    right: 0;
+
+    background: linear-gradient(90deg, $transparent 30%, $dark-opacity-50 70%, $dark);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.carousel__arrow {
+  position: absolute;
+  top: 45%;
+  z-index: 2;
+
+  width: 20px;
+  height: 20px;
+
+  border: none;
+  background-color: $transparent;
+  background-image: url('../img/icon-arrow-checkmark.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--left {
+    display: none;
+
+    left: 2%;
+
+    transform: tranlateY(-50%) rotate(90deg);
+  }
+
+  &--right {
+    right: 2%;
+
+    transform: translateY(-50%) rotate(270deg);
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.carousel__list {
+  display: flex;
+  padding-left: 18px;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 13px;
+    padding-left: 0;
+  }
+
+  @media (min-width: $widescreen-width) {
+    column-gap: 35px;
+    row-gap: 20px;
+    justify-items: start;
+  }
+}

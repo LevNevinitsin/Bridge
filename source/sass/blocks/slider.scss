@@ -1,0 +1,110 @@
+.slider__caption {
+  margin: 0 0 7px;
+
+  font-size: 13px;
+  line-height: 1.22;
+  color: $grey;
+
+  @media (min-width: $widescreen-width) {
+    margin: 0 0 9px;
+
+    font-size: 15px;
+  }
+}
+
+.slider__control {
+  position: relative;
+
+  margin-bottom: 11px;
+
+  @media (min-width: $widescreen-width) {
+    margin-bottom: 13px;
+  }
+}
+
+.slider__input {
+  width: 100%;
+
+  padding: 16px 11px 19px;
+
+  font-family: $font-family;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 0.95;
+  color: $white;
+
+  border: 2px solid $white-opacity-30;
+  border-radius: 7px;
+  background-color: $black;
+
+  &::first-line {
+    line-height: 0.95;
+  }
+
+  @media (min-width: $widescreen-width) {
+    padding: 21px 13px 26px;
+
+    font-size: 23px;
+  }
+}
+
+.slider__line {
+  position: absolute;
+  bottom: 0;
+  left: 1px;
+
+  height: 5px;
+
+  background-color: $primary;
+  border-radius: 17px;
+
+  @media (min-width: $widescreen-width) {
+    bottom: -2px;
+
+    height: 7px;
+  }
+}
+
+.slider__thumb {
+  position: absolute;
+  top: -2px;
+  right: -5px;
+
+  width: 10px;
+  height: 10px;
+
+  border-radius: 50%;
+  background-color: $primary;
+
+  @media (min-width: $desktop-width) {
+    cursor: pointer;
+
+    @include transition(0.1s);
+
+    &:hover {
+      transform: scale(1.3);
+    }
+  }
+
+  @media (min-width: $widescreen-width) {
+    top: -4px;
+    right: -8px;
+
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.slider__limits {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+
+  font-size: 13px;
+  line-height: 1.22;
+  color: $grey;
+
+  @media (min-width: $widescreen-width) {
+    font-size: 15px;
+  }
+}

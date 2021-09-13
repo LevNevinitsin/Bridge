@@ -1,0 +1,149 @@
+.page-header {
+  display: grid;
+  grid-template-columns: 1fr repeat(2, auto);
+  padding: 10px 23px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-rows: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    z-index: 1;
+
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    width: 100%;
+
+    padding: 0;
+  }
+}
+
+.page-header__top-line {
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 10px 30px;
+    border-bottom: 1px solid $white-opacity-30;
+  }
+
+  @media (min-width: $widescreen-width) {
+    padding: 10px 0;
+  }
+}
+
+.page-header__top-wrapper {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    width: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: auto 1fr auto;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1348px;
+    margin: 0 auto;
+  }
+}
+
+.page-header__mobile-buttons {
+  display: flex;
+  align-items: center;
+  margin-right: 27px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 4;
+    grid-row: unset;
+    justify-content: flex-end;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 30px 0;
+  }
+
+  @media (min-width: $widescreen-width) {
+    max-width: 1308px;
+    padding: 30px 0 0;
+  }
+}
+
+.page-header__mobile-button {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    &:not(:last-child) {
+      margin-right: 14px;
+    }
+  }
+}
+
+.page-header__button_invest {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    min-width: 211px;
+
+    transform: translateX(50%);
+  }
+
+  @media (min-width: $desktop-width) {
+    transform: none;
+  }
+}
+
+.page-header__toggle {
+  position: relative;
+
+  width: 37px;
+  height: 37px;
+  padding: 0;
+
+  border: none;
+  background-color: $transparent;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+
+    height: 2px;
+
+    border-radius: 1px;
+    background-color: $white;
+  }
+
+  &::before {
+    top: 16px;
+
+    width: 35px;
+  }
+
+  &::after {
+    top: 25px;
+
+    width: 22px;
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}

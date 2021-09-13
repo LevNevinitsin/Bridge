@@ -1,0 +1,32 @@
+.socials__list {
+  display: flex;
+
+  @include reset-list;
+}
+
+.socials__item {
+  &:not(:last-child) {
+    margin-right: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    &:not(:last-child) {
+      margin-right: 25px;
+    }
+  }
+}
+
+.socials__icon {
+  color: $dark-1;
+
+  @media (min-width: $desktop-width) {
+    width: 39px;
+    height: 39px;
+
+    @include transition;
+
+    &:hover {
+      color: $white;
+    }
+  }
+}

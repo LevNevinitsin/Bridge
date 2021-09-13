@@ -1,0 +1,13 @@
+.logo__image {
+  @media (min-width: $desktop-width) {
+    &--footer {
+      width: 168px;
+      height: 64px;
+    }
+  }
+
+  @media (min-width: $widescreen-width) {
+    width: 165px;
+    height: 62px;
+  }
+}

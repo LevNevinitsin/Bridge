@@ -1,0 +1,16 @@
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+@mixin transition($time: $default-transition-time) {
+  transition: $time;
+}
+
+@mixin focus {
+  outline: none;
+
+  box-shadow: 0 0 2px 2px $primary;
+}

@@ -1,0 +1,55 @@
+.switch__caption {
+  margin: 0 0 12px;
+
+  font-size: 13px;
+  line-height: 1.22;
+  color: $grey;
+
+  @media (min-width: $widescreen-width) {
+    margin: 0 0 16px;
+
+    font-size: 15px;
+  }
+}
+
+.switch__control {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 0.95;
+
+  border-radius: 21px;
+  background-color: $black;
+
+  @media (min-width: $widescreen-width) {
+    max-width: 370px;
+
+    font-size: 15px;
+
+    border-radius: 27px;
+  }
+}
+
+.switch__option {
+  padding: 13px;
+
+  text-align: center;
+  color: $grey-3;
+
+  border-radius: 21px;
+
+  &--active {
+    color: $dark-6;
+
+    background-color: $light-4;
+  }
+
+  @media (min-width: $widescreen-width) {
+    padding: 17px;
+
+    border-radius: 27px;
+  }
+}
