@@ -1,12 +1,12 @@
 .intro {
   padding-top: 5px;
 
-  background-image: linear-gradient(0deg, $black-opacity-25, $black-opacity-25), url('../img/bg-intro-mobile.png');
+  background-image: linear-gradient(0deg, $black-opacity-25, $black-opacity-25), url("../img/bg-intro-mobile.png");
   background-position: center bottom;
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
-    background-image: linear-gradient(0deg, $black-opacity-25, $black-opacity-25), url('../img/bg-intro-desktop.png');
+    background-image: linear-gradient(0deg, $black-opacity-25, $black-opacity-25), url("../img/bg-intro-desktop.png");
     background-position: left bottom;
     background-size: contain;
   }
@@ -89,7 +89,7 @@
   backdrop-filter: blur(2.55466px);
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 55%;
     right: 63px;
@@ -97,7 +97,7 @@
     width: 18px;
     height: 23px;
 
-    background-image: url('../img/icon-play.svg');
+    background-image: url("../img/icon-play.svg");
 
     transform: translateY(-50%);
   }

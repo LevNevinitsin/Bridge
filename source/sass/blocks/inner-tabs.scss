@@ -1,18 +1,18 @@
 .inner-tabs__heads {
   display: none;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     margin-bottom: 22px;
     background-color: $black;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     display: none;
   }
 
-  @media(min-width: $widescreen-width) {
+  @media (min-width: $widescreen-width) {
     display: flex;
     margin-bottom: 28px;
 
@@ -50,7 +50,7 @@
 }
 
 .inner-tabs__body {
-  @media(min-width: $widescreen-width) {
+  @media (min-width: $widescreen-width) {
     padding: 0 12px;
 
     &--deal-conditions {

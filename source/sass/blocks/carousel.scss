@@ -7,7 +7,7 @@
 
   &::before,
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     bottom: 0;
@@ -48,7 +48,7 @@
 
   border: none;
   background-color: $transparent;
-  background-image: url('../img/icon-arrow-checkmark.svg');
+  background-image: url("../img/icon-arrow-checkmark.svg");
   background-repeat: no-repeat;
   background-position: center;
 
@@ -57,7 +57,7 @@
 
     left: 2%;
 
-    transform: tranlateY(-50%) rotate(90deg);
+    transform: translateY(-50%) rotate(90deg);
   }
 
   &--right {

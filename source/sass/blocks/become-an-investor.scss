@@ -12,7 +12,7 @@
   @media (min-width: $widescreen-width) {
     max-width: 1187px;
     margin: 0 auto;
-    padding: 99px 0px 111px;
+    padding: 99px 0 111px;
   }
 }
 
@@ -97,7 +97,7 @@
   // Стрелка
   &:not(:last-child) {
     &::after {
-      content: '';
+      content: "";
 
       position: absolute;
       bottom: 0;
@@ -106,7 +106,7 @@
       width: 13px;
       height: 22px;
 
-      background-image: url('../img/icon-arrow-list.svg');
+      background-image: url("../img/icon-arrow-list.svg");
       background-repeat: no-repeat;
 
       transform: translateY(50%);

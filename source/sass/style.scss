@@ -7,44 +7,51 @@
 
 // Blocks
 
+// Common
 @import "blocks/button.scss";
 @import "blocks/input.scss";
 @import "blocks/heading.scss";
 
+// Body, header, footer
 @import "blocks/page.scss";
-
 @import "blocks/page-header.scss";
 @import "blocks/mobile-button.scss";
 @import "blocks/main-navigation.scss";
 @import "blocks/logo.scss";
-
-@import "blocks/page-main.scss";
-
 @import "blocks/page-footer.scss";
 @import "blocks/socials.scss";
 @import "blocks/navigation.scss";
 @import "blocks/big-navigation.scss";
 
+// Index page sections
+
+// Intro
 @import "blocks/intro.scss";
 @import "blocks/intro-socials.scss";
 
+// Results
 @import "blocks/results.scss";
 
+// Options
 @import "blocks/options.scss";
 @import "blocks/tabs.scss";
 @import "blocks/profitability.scss";
 @import "blocks/inner-tabs.scss";
 
+// Calculator
 @import "blocks/calculator.scss";
 @import "blocks/slider.scss";
 @import "blocks/switch.scss";
 @import "blocks/calc-results.scss";
 
+// Become an investor
 @import "blocks/become-an-investor.scss";
 
+// Reviews
 @import "blocks/reviews.scss";
 @import "blocks/carousel.scss";
 @import "blocks/video-preview.scss";
 @import "blocks/guarantees.scss";
 
+// Miscellaneous
 @import "blocks/visually-hidden.scss";

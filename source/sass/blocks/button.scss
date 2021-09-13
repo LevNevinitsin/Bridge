@@ -23,7 +23,7 @@
     border: none;
     background-color: $primary;
 
-    box-shadow: 0px 2.4px 12px rgba(255, 151, 10, 0.41);
+    box-shadow: 0 2.4px 12px rgba(255, 151, 10, 0.41);
   }
 
   &--2 {
@@ -49,13 +49,13 @@
 
   &--arrow {
     &::after {
-      content: '';
+      content: "";
 
       width: 19px;
       height: 12px;
       margin-left: 8px;
 
-      background-image: url('../img/icon-arrow-button.svg');
+      background-image: url("../img/icon-arrow-button.svg");
       background-repeat: no-repeat;
     }
   }
