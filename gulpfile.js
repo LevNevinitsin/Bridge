@@ -10,7 +10,7 @@ const htmlmin = require("gulp-htmlmin");
 const concat = require("gulp-concat");
 const uglify = require("gulp-uglify-es").default;
 const imagemin = require("gulp-imagemin");
-const pngquant = require('imagemin-pngquant');
+const pngquant = require("imagemin-pngquant");
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
@@ -63,7 +63,7 @@ const optimizeImages = () => {
     .pipe(imagemin([
       imagemin.mozjpeg({ quality: 75, progressive: true }),
       pngquant({
-        quality: [0.3, 0.5],
+        quality: [0.9, 0.95],
         speed: 1
       }),
       imagemin.svgo()
